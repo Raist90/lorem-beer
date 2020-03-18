@@ -11,6 +11,7 @@ const indexPage = () => {
             <div>
                 <Helmet>
                     <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin&display=swap" rel="stylesheet"></link>
+                    <html lang="it"></html>
                 </Helmet>
                 <Menu />
                 <Banner />
