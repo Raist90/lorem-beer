@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import "../components/custom.css"
+import "../components/singlePost.css"
 
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -22,7 +22,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM, YYYY", locale: "it")
         path
         title
       }
